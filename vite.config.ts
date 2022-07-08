@@ -6,6 +6,9 @@ const pageData = {
   '/index.html': {
     title: `Shack Donald's`,
   },
+  '/about/index.html': {
+    title: `Shack Donald's | О нас`,
+  },
 }
 
 // https://vitejs.dev/config/
@@ -14,6 +17,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+        about: resolve(__dirname, 'about/index.html'),
       },
     },
   },
